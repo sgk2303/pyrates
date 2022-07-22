@@ -1,6 +1,10 @@
 from PyQt5 import QtCore, QtGui, QtWidgets
 
 
+client = pymongo.MongoClient("mongodb+srv://sgk2303:<password>@cluster0.dsp9o.mongodb.net/?retryWrites=true&w=majority")
+db = client.test
+
+
 class Ui_MainWindow(object):
     def setupUi(self, MainWindow):
         MainWindow.setObjectName("MainWindow")
